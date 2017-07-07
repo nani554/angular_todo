@@ -1,0 +1,22 @@
+<div class="content">
+      <!-- <button ng-click="byName()">order by name</button> -->
+      <button ng-click="order='name'">order by name</button>
+
+      <!-- <button ng-click="byBelt()">order by belt</button> -->
+      <button ng-click="order='belt'">order by belt</button>
+
+      <input type="text" name="searchInput" ng-model="search" placeholder="Search for a ninja">
+      <ul ng-controller="karate">
+        <li ng-repeat="people in ninjas | orderBy: order | filter:search" ng-show="people.available">
+        <img ng-src="{{people.thumb}}"  <h3>{{people.name}}-{{people.rate|currency:'&#x20B9;'}}</h3>
+          <div class="remove" ng-click="removeNinja(people)">x</div><!-- people argument is used to find user clicked on exactly on which person -->
+          <span class="belt" style="background:{{people.belt}}">{{people.belt}} belt</span>
+        </li>
+      </ul>
+      <form ng-submit="addNewninja()">
+        <input type="text" name="name" placeholder="name" ng-model="newninja.name">
+        <input type="text" name="belt" placeholder="belt" ng-model="newninja.belt">
+        <input type="number" name="rate" placeholder="number" ng-model="newninja.rate">
+        <input type="submit" value="Add newninja">
+      </form>
+</div>

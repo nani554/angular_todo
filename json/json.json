@@ -1,0 +1,32 @@
+
+    [
+        {
+          "name":"kalesh",
+          "belt":"orange",
+          "rate":45,
+          "available":true,
+          "thumb":"assets/pic.png"
+      },
+      {
+        "name":"suresh",
+        "belt":"pink",
+        "rate":20,
+        "available":true,
+        "thumb":"assets/pic.png"
+      },
+      {
+        "name":"badhesh",
+        "belt":"brown",
+        "rate":50,
+        "available":true,
+        "thumb":"assets/pic.png"
+      },
+      {
+        "name":"kamesh",
+        "belt":"black",
+        "rate":100,
+        "available":true,
+        "thumb":"assets/pic.png"
+      }
+      ]
+    
